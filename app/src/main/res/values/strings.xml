@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">billiard_pub</string>
+    <string name="name">Felhasználónév</string>
+    <string name="password">Jelszó</string>
+    <string name="login">Bejelentkezés</string>
+    <string name="registration">Regisztráció</string>
+    <string name="user_name">felhasznalónév</string>
+    <string name="email_address">Email-cím</string>
+    <string name="password_again">Jelszó megismétlése</string>
+    <string name="cancel">Mégse</string>
+    <string name="title_activity_home_page">HomePageActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="phoneNum">Telefonszám</string>
+    <string name="logAsGuest">Bejelentkezés vendégként</string>
+    <string name="loginWithGoogle">Bejelentkezés Google-fiókkal</string>
+    <string name="logOut">Kijelentkezés</string>
+    <string name="email">Email cím</string>
+    <string name="success_log">Szia! Sikerült belépned!</string>
+    <string name="logo">Logo</string>
+    <string name="choosedate">Válassz időpontot</string>
+
+    <string name="appointment">Időpontfoglalás</string>
+    <string name="contact">Kontakt</string>
+    <string name="HomePageButton">Főoldal</string>
+    <string name="booking">Foglalás</string>
+    <string name="test">Teszt</string>
+</resources>

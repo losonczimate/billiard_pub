@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1014617185557",
+    "project_id": "billiard-pub-2022-mobilalk",
+    "storage_bucket": "billiard-pub-2022-mobilalk.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1014617185557:android:2664c865ea56a1485f9d1c",
+        "android_client_info": {
+          "package_name": "com.example.billiard_pub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1014617185557-2pvpoi74g2enkjso8e6sm1qm18ecbg8j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.billiard_pub",
+            "certificate_hash": "270237cfe286e7602a85512d74351269eb5c1ae0"
+          }
+        },
+        {
+          "client_id": "1014617185557-05l93j1tlvsui3ig8q171iodtkv7p2ba.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD790360TWq5g190uoHnjVw-PwtSfpsVDM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1014617185557-05l93j1tlvsui3ig8q171iodtkv7p2ba.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
