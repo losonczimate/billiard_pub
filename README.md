@@ -1,4 +1,5 @@
-kérdés esetén: https://www.facebook.com/mate.losonczi/
+# billiard_pub
 
-Nem teljes a projekt, tudom és elfogadom. Időszűkében sajnos erre futotta.
-Mellékelek egy kitöltött javító táblát, hogy szerintem milyen lehet. Nyilván ez a javítást nem zárja ki :D
+# a projekt neve "Billiard Pub"
+# Losonczi Máté néven, facebookon megtalálhat bárki, akinek kérdése van a projekttel kapcsolatban
+# nincs kész, a CRUD műveletek hiányoznak, illetve nincs lekérdezés 
