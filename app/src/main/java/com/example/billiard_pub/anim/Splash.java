@@ -19,8 +19,8 @@ public class Splash extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        imageView=(ImageView)findViewById(R.id.headerimage); // Declare an imageView to show the animation.
-        anim = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fade_in); // Create the animation.
+        imageView=(ImageView)findViewById(R.id.headerimage);
+        anim = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fade_in);
         anim.setAnimationListener(new Animation.AnimationListener() {
             @Override
             public void onAnimationStart(Animation animation) {
@@ -30,7 +30,7 @@ public class Splash extends AppCompatActivity {
             public void onAnimationEnd(Animation animation) {
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
-                // HomeActivity.class is the activity to go after showing the splash screen.
+
             }
 
             @Override

@@ -55,27 +55,7 @@ public class RegistrationActivity extends AppCompatActivity {
        if (secret_key != 99) {
             finish();
         }
-        
-        if (Build.VERSION.SDK_INT == Build.VERSION_CODES.O){
-            NotificationChannel channel = new NotificationChannel("My Notification","My Notification",NotificationManager.IMPORTANCE_DEFAULT);
-            NotificationManager manager = getSystemService(NotificationManager.class);
-            manager.createNotificationChannel(channel);
-        }
-        notify_btn = findViewById(R.id.button);
-        notify_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                NotificationCompat.Builder builder = new NotificationCompat.Builder
-                        (RegistrationActivity.this,"My Notification");
-                builder.setContentTitle("Billiard Pub");
-                builder.setContentText("Sikeres regisztráció! Lépj be, hogy foglalhass.");
-                builder.setSmallIcon(R.drawable.ic_launcher_background);
-                builder.setAutoCancel(true);
 
-                NotificationManagerCompat managerCompat = NotificationManagerCompat.from(RegistrationActivity.this);
-                managerCompat.notify(1, builder.build());
-            }
-        });
         userNameEditText = findViewById(R.id.userNameEditText);
         userEmailEditText = findViewById(R.id.userEmailEditText);
         userNamePasswordEditText = findViewById(R.id.passwordEditText);
