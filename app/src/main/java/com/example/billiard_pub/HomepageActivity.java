@@ -1,15 +1,13 @@
 package com.example.billiard_pub;
 
-import static com.google.common.collect.ComparisonChain.start;
 import static javax.crypto.Cipher.SECRET_KEY;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.animation.ObjectAnimator;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -50,12 +48,6 @@ public class HomepageActivity extends AppCompatActivity {
 
     public void refresh(View view) {
         Intent intent = new Intent(this, HomepageActivity.class);
-        intent.putExtra("SECRET_KEY", SECRET_KEY);
-        startActivity(intent);
-    }
-
-    public void goToContactPage(View view) {
-        Intent intent = new Intent(this, ContactActivity.class);
         intent.putExtra("SECRET_KEY", SECRET_KEY);
         startActivity(intent);
     }

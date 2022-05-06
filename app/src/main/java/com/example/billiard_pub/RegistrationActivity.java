@@ -2,30 +2,21 @@ package com.example.billiard_pub;
 
 import static javax.crypto.Cipher.SECRET_KEY;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.NotificationCompat;
-import androidx.core.app.NotificationManagerCompat;
-
-import android.app.Notification;
-import android.app.NotificationChannel;
-import android.app.NotificationManager;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-
-import javax.crypto.SecretKey;
 
 public class RegistrationActivity extends AppCompatActivity {
     private static final String LOG_TAG = RegistrationActivity.class.getName();
@@ -38,9 +29,6 @@ public class RegistrationActivity extends AppCompatActivity {
     EditText userNamePasswordEditText;
     EditText userNamePasswordAgainEditText;
     EditText phoneNumberEditText;
-
-    Button notify_btn;
-
 
     private SharedPreferences preferences;
     private FirebaseAuth mAuth;
@@ -62,10 +50,9 @@ public class RegistrationActivity extends AppCompatActivity {
         userNamePasswordAgainEditText = findViewById(R.id.passwordAgainEditText);
         phoneNumberEditText = findViewById(R.id.phoneNumberEditText);
         SharedPreferences preferences = getSharedPreferences(PREF_KEY, MODE_PRIVATE);
-        String username = preferences.getString("username", "");
+
         String password = preferences.getString("password", "");
 
-        userNameEditText.setText(username);
         userNamePasswordEditText.setText(password);
 
 
