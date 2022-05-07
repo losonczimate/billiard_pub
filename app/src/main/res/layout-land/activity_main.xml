@@ -55,8 +55,8 @@
 
     <Button
         android:id="@+id/loginAnonim"
-        android:layout_width="227dp"
-        android:layout_height="40dp"
+        android:layout_width="228dp"
+        android:layout_height="59dp"
         android:backgroundTint="@color/darkgreen"
         android:onClick="logAsguest"
         android:text="@string/logAsGuest"

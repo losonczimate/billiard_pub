@@ -10,8 +10,8 @@
 
     <TextView
         android:id="@+id/registrationTextView"
-        android:layout_width="239dp"
-        android:layout_height="41dp"
+        android:layout_width="197dp"
+        android:layout_height="40dp"
         android:layout_marginBottom="12dp"
         android:text="@string/registration"
         android:textAlignment="center"
@@ -21,7 +21,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/headerimage"
-        app:layout_constraintVertical_bias="0.63"
+        app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints" />
 
     <ImageView
@@ -38,16 +38,14 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="407dp"
-        android:layout_height="364dp"
+        android:layout_width="347dp"
+        android:layout_height="313dp"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.436">
+        app:layout_constraintTop_toTopOf="parent">
 
 
         <EditText
@@ -126,12 +124,11 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="12dp"
         android:backgroundTint="@color/darkgreen"
         android:onClick="register"
         android:text="@string/registration"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
@@ -140,12 +137,12 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
-        android:onClick="cancel"
+        android:layout_marginTop="4dp"
         android:backgroundTint="@color/darkgreen"
+        android:onClick="cancel"
         android:text="@string/cancel"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
 

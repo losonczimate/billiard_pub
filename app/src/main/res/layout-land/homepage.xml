@@ -32,7 +32,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/picturetaken"
-        app:layout_constraintVertical_bias="0.426" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/button4"
@@ -58,12 +58,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button4"
-        app:layout_constraintVertical_bias="0.63" />
+        app:layout_constraintVertical_bias="0.884" />
 
     <Button
         android:id="@+id/picturetaken"
-        android:layout_width="217dp"
-        android:layout_height="50dp"
+        android:layout_width="225dp"
+        android:layout_height="68dp"
         android:layout_marginTop="16dp"
 
         android:backgroundTint="@color/darkgreen"
