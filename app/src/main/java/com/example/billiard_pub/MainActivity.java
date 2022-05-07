@@ -38,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,26 +50,26 @@ public class MainActivity extends AppCompatActivity {
         preferences = getSharedPreferences(PREF_KEY, MODE_PRIVATE);
 
         //for animation
-        loginB =findViewById(R.id.loginButton);
+        loginB = findViewById(R.id.loginButton);
         loginAnon = findViewById(R.id.loginAnonim);
         registerB = findViewById(R.id.signButton);
-        Animation animation = AnimationUtils.loadAnimation(this,R.anim.fade_in);
+        Animation animation = AnimationUtils.loadAnimation(this, R.anim.fade_in);
         loginB.startAnimation(animation);
         loginAnon.startAnimation(animation);
         registerB.startAnimation(animation);
 
 
-
-
         Log.i(LOG_TAG, "onCreate");
     }
-    public void blink(View view){
-        ImageView image = (ImageView)findViewById(R.id.headerimage);
+
+    public void blink(View view) {
+        ImageView image = (ImageView) findViewById(R.id.headerimage);
         Animation animation1 =
                 AnimationUtils.loadAnimation(getApplicationContext(),
                         R.anim.blink);
         image.startAnimation(animation1);
     }
+
     public void loginNormal(View view) {
 
         String userName = usernameET.getText().toString();
@@ -80,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
         mAuth.signInWithEmailAndPassword(userName, password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
-                if(task.isSuccessful()){
+                if (task.isSuccessful()) {
                     Log.d(LOG_TAG, "Login done!");
                     gotoBooking();
                 } else {
@@ -89,11 +88,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
     public void logAsguest(View view) {
         mAuth.signInAnonymously().addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
-                if(task.isSuccessful()){
+                if (task.isSuccessful()) {
                     Log.d(LOG_TAG, "Login as guest done!");
                     gotoBooking();
                 } else {
@@ -102,6 +102,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
     public void registration(View view) {
         Intent intent = new Intent(this, RegistrationActivity.class);
         intent.putExtra("SECRET_KEY", SECRET_KEY);
@@ -114,21 +115,25 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra("SECRET_KEY", SECRET_KEY);
         startActivity(intent);
     }
+
     @Override
     protected void onStart() {
         super.onStart();
         Log.i(LOG_TAG, "onStart");
     }
+
     @Override
     protected void onStop() {
         super.onStop();
         Log.i(LOG_TAG, "onStop");
     }
+
     @Override
     protected void onDestroy() {
         super.onDestroy();
         Log.i(LOG_TAG, "onDestroy");
     }
+
     @Override
     protected void onPause() {
         super.onPause();
@@ -140,11 +145,13 @@ public class MainActivity extends AppCompatActivity {
 
         Log.i(LOG_TAG, "onPause");
     }
+
     @Override
     protected void onResume() {
         super.onResume();
         Log.i(LOG_TAG, "onResume");
     }
+
     @Override
     protected void onRestart() {
         super.onRestart();

@@ -12,7 +12,9 @@ public class Appointments {
         this.kep = kep;
         this.foglalte = foglalte;
     }
-    public Appointments(){}
+
+    public Appointments() {
+    }
 
     public String getId() {
         return id;

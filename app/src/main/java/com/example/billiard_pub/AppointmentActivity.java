@@ -45,7 +45,9 @@ public class AppointmentActivity extends AppCompatActivity {
         setContentView(R.layout.activity_appointment);
 
         user = FirebaseAuth.getInstance().getCurrentUser();
-        if(user == null) {finish();}
+        if (user == null) {
+            finish();
+        }
 
 
         mRecyclerView = findViewById(R.id.recyclerView);

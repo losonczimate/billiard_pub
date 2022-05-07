@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class AppointmentAdapter extends RecyclerView.Adapter<AppointmentAdapter.ViewHolder>{
+public class AppointmentAdapter extends RecyclerView.Adapter<AppointmentAdapter.ViewHolder> {
 
     private ArrayList<Appointments> mAppointments;
 
@@ -39,7 +39,7 @@ public class AppointmentAdapter extends RecyclerView.Adapter<AppointmentAdapter.
         holder.bindTo(currentItem);
 
 
-        if(holder.getAdapterPosition() > lastPosition) {
+        if (holder.getAdapterPosition() > lastPosition) {
             Animation animation = AnimationUtils.loadAnimation(mContext, R.anim.slide_in_row);
             holder.itemView.startAnimation(animation);
             lastPosition = holder.getAdapterPosition();
@@ -50,6 +50,7 @@ public class AppointmentAdapter extends RecyclerView.Adapter<AppointmentAdapter.
     public int getItemCount() {
         return mAppointments.size();
     }
+
     class ViewHolder extends RecyclerView.ViewHolder {
         private TextView mTitleText;
         private TextView mInfoText;
@@ -65,7 +66,7 @@ public class AppointmentAdapter extends RecyclerView.Adapter<AppointmentAdapter.
 
         }
 
-        void bindTo(Appointments currentItem){
+        void bindTo(Appointments currentItem) {
             mTitleText.setText(currentItem.getDesc());
             mInfoText.setText(currentItem.getId());
 

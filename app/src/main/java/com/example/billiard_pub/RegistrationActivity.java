@@ -23,7 +23,6 @@ public class RegistrationActivity extends AppCompatActivity {
     private static final String PREF_KEY = MainActivity.class.getPackage().toString();
 
 
-
     EditText userNameEditText;
     EditText userEmailEditText;
     EditText userNamePasswordEditText;
@@ -32,6 +31,7 @@ public class RegistrationActivity extends AppCompatActivity {
 
     private SharedPreferences preferences;
     private FirebaseAuth mAuth;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,7 +40,7 @@ public class RegistrationActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         int secret_key = getIntent().getIntExtra("SECRET_KEY", 0);
 
-       if (secret_key != 99) {
+        if (secret_key != 99) {
             finish();
         }
 
@@ -54,7 +54,6 @@ public class RegistrationActivity extends AppCompatActivity {
         String password = preferences.getString("password", "");
 
         userNamePasswordEditText.setText(password);
-
 
 
         Log.i(LOG_TAG, "onCreate");
@@ -115,7 +114,7 @@ public class RegistrationActivity extends AppCompatActivity {
         mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
-                if(task.isSuccessful()) {
+                if (task.isSuccessful()) {
                     Log.d(LOG_TAG, "Felhasznalo letrehozasa sikerult.");
                     gotoBooking();
                 } else {
