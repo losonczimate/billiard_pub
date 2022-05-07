@@ -62,8 +62,8 @@
 
     <Button
         android:id="@+id/picturetaken"
-        android:layout_width="217dp"
-        android:layout_height="50dp"
+        android:layout_width="215dp"
+        android:layout_height="63dp"
         android:layout_marginTop="20dp"
 
         android:backgroundTint="@color/darkgreen"

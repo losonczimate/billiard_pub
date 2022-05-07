@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     Button registerB;
     private SharedPreferences preferences;
     private FirebaseAuth mAuth;
-
+    private NotificationHelper mNotificationHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         loginAnon.startAnimation(animation);
         registerB.startAnimation(animation);
 
-
+        mNotificationHelper = new NotificationHelper(this);
         Log.i(LOG_TAG, "onCreate");
     }
 
