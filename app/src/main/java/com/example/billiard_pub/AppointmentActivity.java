@@ -59,7 +59,7 @@ public class AppointmentActivity extends AppCompatActivity {
         mRecyclerView.setAdapter(mAdapter);
 
         mFirestore = FirebaseFirestore.getInstance();
-        mItems = mFirestore.collection("Appointments");
+        mItems = mFirestore.collection("appointments");
         queryData();
 
         mNotificationHelper = new NotificationHelper(this);
@@ -114,6 +114,4 @@ public class AppointmentActivity extends AppCompatActivity {
 
     }
 
-    public void foglalas(Appointments currentItem) {
-    }
 }

@@ -13,7 +13,7 @@ public class NotificationJobService extends JobService {
     @Override
     public boolean onStartJob(JobParameters params) {
         mNotificationHelper = new NotificationHelper(getApplicationContext());
-        mNotificationHelper.send("Foglald le helyed, hogy meglegyen a kedved, nem lesz este móka, ha pub után a róka, jön.");
+        mNotificationHelper.send("Foglald le helyed, hogy meglegyen a kedved, nem lesz este móka, ha pub után a róka, jön.s");
         return false;
     }
 

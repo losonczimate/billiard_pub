@@ -26,4 +26,5 @@
     <string name="item_placeholder">Foglalás időpontja</string>
     <string name="desc">Leírás</string>
     <string name="add_appointment">Foglalás</string>
+    <string name="sharehappiness">Oszd meg az élményed</string>
 </resources>

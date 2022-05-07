@@ -5,11 +5,11 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -36,14 +36,14 @@ public class MainActivity extends AppCompatActivity {
     Button registerB;
     private SharedPreferences preferences;
     private FirebaseAuth mAuth;
-    private NotificationHelper mNotificationHelper;
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
+
 
         usernameET = findViewById(R.id.editTextUserName);
         passwordET = findViewById(R.id.editTextPassword);
@@ -54,26 +54,23 @@ public class MainActivity extends AppCompatActivity {
         loginB =findViewById(R.id.loginButton);
         loginAnon = findViewById(R.id.loginAnonim);
         registerB = findViewById(R.id.signButton);
-
-
         Animation animation = AnimationUtils.loadAnimation(this,R.anim.fade_in);
         loginB.startAnimation(animation);
         loginAnon.startAnimation(animation);
         registerB.startAnimation(animation);
 
-/*
-        new Handler().postDelayed(new Runnable(){
-            @Override
-                    public void run(){
-                Intent intent = new Intent(MainActivity.this, MainActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });*/
+
+
 
         Log.i(LOG_TAG, "onCreate");
     }
-
+    public void blink(View view){
+        ImageView image = (ImageView)findViewById(R.id.headerimage);
+        Animation animation1 =
+                AnimationUtils.loadAnimation(getApplicationContext(),
+                        R.anim.blink);
+        image.startAnimation(animation1);
+    }
     public void loginNormal(View view) {
 
         String userName = usernameET.getText().toString();
