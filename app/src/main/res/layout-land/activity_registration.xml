@@ -41,7 +41,6 @@
         android:id="@+id/userNameEditText"
         android:layout_width="147dp"
         android:layout_height="41dp"
-        android:layout_marginTop="140dp"
         android:autofillHints=""
         android:background="@color/white"
         android:ems="10"
@@ -49,8 +48,12 @@
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:textColorHint="#757575"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="359dp" />
+        app:layout_constraintVertical_bias="0.459" />
 
     <Button
         android:id="@+id/button"
@@ -95,10 +98,12 @@
         android:hint="@string/phoneNum"
         android:inputType="phone"
         android:minHeight="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/passwordAgainEditText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.661"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        tools:layout_editor_absoluteX="573dp" />
+        app:layout_constraintVertical_bias="0.677" />
 
     <EditText
         android:id="@+id/userEmailEditText"
@@ -112,16 +117,17 @@
         android:minHeight="48dp"
         android:textColorHint="#757575"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userNameEditText"
-        app:layout_constraintVertical_bias="0.23"
-        tools:layout_editor_absoluteX="551dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.269"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.677" />
 
     <EditText
         android:id="@+id/passwordEditText"
         android:layout_width="128dp"
         android:layout_height="48dp"
 
-        android:layout_marginTop="8dp"
         android:autofillHints=""
         android:background="@color/white"
         android:ems="10"
@@ -129,8 +135,12 @@
         android:inputType="textPassword"
         android:minHeight="48dp"
         android:textColorHint="#757575"
-        app:layout_constraintTop_toBottomOf="@+id/passwordAgainEditText"
-        tools:layout_editor_absoluteX="366dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.468" />
 
     <EditText
         android:id="@+id/passwordAgainEditText"
@@ -142,7 +152,11 @@
         android:hint="@string/password_again"
         android:inputType="textPassword"
         android:minHeight="48dp"
-        tools:layout_editor_absoluteX="359dp"
-        tools:layout_editor_absoluteY="195dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.723"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.469" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
