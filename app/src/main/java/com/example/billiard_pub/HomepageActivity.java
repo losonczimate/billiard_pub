@@ -44,8 +44,8 @@ public class HomepageActivity extends AppCompatActivity {
             finish();
         }
     }
-        //camera use
 
+    //camera use
     public void openCamera(View view) {
         checkUserPermission();
     }
